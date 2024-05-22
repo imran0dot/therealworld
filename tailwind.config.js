@@ -9,6 +9,7 @@ export default {
       colors: {
         "primary-background":  "#060e15",
         "secondary-white": "rgba(255, 255, 255, .5)",
+        "secondary-dark": "#181E27",
         "yellow": "#ffcf23",
         "brand": "#ffbb38",
         "orange": "#ff8d3a",
