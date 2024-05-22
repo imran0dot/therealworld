@@ -1,10 +1,14 @@
 import React from 'react';
 import Footer from './components/shared/Footer';
+import MainTitle from './components/shared/MainTitle';
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <MainTitle 
+      title="ARE YOU PREPARED TO WORK HARD?"
+      subTitle="ASK YOURSELF"
+       />
       <Footer></Footer>
     </div>
   );
