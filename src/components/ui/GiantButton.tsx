@@ -38,6 +38,7 @@ const GiantButton: React.FC<{
                     transition-all
                     duration-300
                     text-3xl
+                    giantButton
         '>
                         <div className='sticky z-20 w-full h-full'>
                             {children}
