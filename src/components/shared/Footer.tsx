@@ -1,5 +1,5 @@
 import React from 'react';
-import MaxWidth from '../../MaxWidth';
+import Container from './Container';
 
 export interface MenuType {
     name: string,
@@ -28,7 +28,7 @@ const footerLink: MenuType[] = [
 const Footer: React.FC = () => {
     return (
         <div className='py-20'>
-            <MaxWidth>
+            <Container>
 
 
                 {/* react footer menu  */}
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                         <button className='border border-transparent hover:border-white p-3 text-white block bg-secondary-dark duration-300 transition-all'>Login Now</button>
                     </div>
                 </div>
-            </MaxWidth>
+            </Container>
         </div>
     );
 };

@@ -25,7 +25,8 @@ const MainTitle: React.FC<Title> = ({ title, subTitle }) => {
                 className='
                     font-semibold 
                     uppercase 
-                    text-6xl 
+                    text-3xl
+                    md:text-6xl 
                     bg-white
                     font-secondary
                 '

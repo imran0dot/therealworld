@@ -23,6 +23,8 @@ const GiantButton: React.FC<{
                 group
                 relative
                 overflow-hidden
+                shadow-xl
+                hover:shadow-gold
             '>
                     <button className='
                     py-5
