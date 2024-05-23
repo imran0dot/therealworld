@@ -4,6 +4,7 @@ import MainTitle from './components/shared/MainTitle';
 import CheckListItem from './components/ui/CheckListItem';
 import IconTitle from './components/ui/IconTitle';
 import { FaBeer } from 'react-icons/fa';
+import GiantButton from './components/ui/GiantButton';
 
 
 const App: React.FC = () => {
@@ -15,6 +16,7 @@ const App: React.FC = () => {
        />
        <CheckListItem title='Celebrate your wins with people who understand' />
        <IconTitle icon={FaBeer} title='Access to multimillionaires' />
+       <GiantButton>Join the Real World</GiantButton>
       <Footer></Footer>
     </div>
   );
