@@ -1,12 +1,12 @@
 import React from 'react';
 import MaxWidth from '../../MaxWidth';
 
-interface FooterLink {
+export interface MenuType {
     name: string,
     link: string
 }
 
-const footerLink: FooterLink[] = [
+const footerLink: MenuType[] = [
     {
         name: "Terms & Conditions",
         link: "#"

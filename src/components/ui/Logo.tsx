@@ -3,8 +3,8 @@ import logo from '../../../src/assets/the-real-world-logo_1the-real-world-logo.w
 
 const Logo:React.FC = () => {
     return (
-        <div>
-            <img src={logo} alt='logo' />
+        <div className='flex justify-center items-center'>
+            <img src={logo} alt='logo' className='w-28' />
         </div>
     );
 };
