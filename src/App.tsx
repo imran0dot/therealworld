@@ -1,7 +1,10 @@
 import React from 'react';
 import Footer from './components/shared/Footer';
 import MainTitle from './components/shared/MainTitle';
-import CheckListItem from './components/ui/CheackListItem';
+import CheckListItem from './components/ui/CheckListItem';
+import IconTitle from './components/ui/IconTitle';
+import { FaBeer } from 'react-icons/fa';
+
 
 const App: React.FC = () => {
   return (
@@ -11,6 +14,7 @@ const App: React.FC = () => {
       subTitle="ASK YOURSELF"
        />
        <CheckListItem title='Celebrate your wins with people who understand' />
+       <IconTitle icon={FaBeer} title='Access to multimillionaires' />
       <Footer></Footer>
     </div>
   );

@@ -20,6 +20,9 @@ export default {
         "light-gold": "#d0b167",
         "secondary-light-gold": "#ddc079",
         "secondary-dark-gold": "#ad8b3a"
+      },
+      fontFamily: {
+        'secondary': "Clashdisplay Variable, sans-serif"
       }
     },
   },

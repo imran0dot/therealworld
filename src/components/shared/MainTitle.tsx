@@ -12,8 +12,7 @@ const MainTitle: React.FC<Title> = ({ title, subTitle }) => {
         WebkitTextFillColor: 'transparent',
         backgroundImage: `url(${titleBackground})`,
         WebkitBackgroundClip: 'text',
-        backgroundClip: 'text',
-        fontFamily: 'Clashdisplay Variable, sans-serif',
+        backgroundClip: 'text'
     };
 
     return (
@@ -21,7 +20,16 @@ const MainTitle: React.FC<Title> = ({ title, subTitle }) => {
             {
                 subTitle && <div style={headingStyles} className='bg-white'>{subTitle}</div>
             }
-            <div style={headingStyles} className='font-semibold uppercase text-6xl bg-white'>{title}</div>
+            <div
+                style={headingStyles}
+                className='
+                    font-semibold 
+                    uppercase 
+                    text-6xl 
+                    bg-white
+                    font-secondary
+                '
+            >{title}</div>
         </div>
     );
 };
