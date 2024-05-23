@@ -8,6 +8,9 @@ export default {
     extend: {
       colors: {
         "primary-background":  "#060e15",
+        "secondary-background": "rgba(255, 255, 255, .07)",
+        "secondary-hover-background": "rgba(255, 255, 255, .12)",
+        "secondary-border": "rgba(255, 255, 255, .21)",
         "secondary-white": "rgba(255, 255, 255, .5)",
         "secondary-dark": "#181E27",
         "yellow": "#ffcf23",
