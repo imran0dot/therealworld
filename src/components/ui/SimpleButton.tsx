@@ -7,8 +7,8 @@ const SimpleButton: React.FC<{
 }) => {
         return (
             <button className='
-                py-2
-                px-4
+                py-4
+                px-8
                 border
                 border-secondary-border
                 text-secondary-white
@@ -19,6 +19,8 @@ const SimpleButton: React.FC<{
                 transition-all
                 font-bold
                 font-secondary
+                z-50
+                
             '>
                 {children}
             </button>

@@ -37,11 +37,13 @@ const Menu: React.FC = () => {
                 onClick={() => setOpen(!isOpen)}
                 className='text-white flex justify-start items-center cursor-pointer'>
                 <Hamburger
+                    color='rgba(255, 255, 255, .5)'
+                    size={20}
                     toggled={isOpen}
                     toggle={setOpen}
                     easing="ease-in" />
 
-                <p className='uppercase font-semibold'>Menu</p>
+                <p className='uppercase font-semibold text-sm text-secondary-white'>Menu</p>
             </div>
 
             <div className={`

@@ -16,7 +16,7 @@ const GiantButton: React.FC<{
                 font-secondary
                 transition-all
                 duration-300
-                p-2
+                p-1
                 flex
                 justify-center
                 items-center
