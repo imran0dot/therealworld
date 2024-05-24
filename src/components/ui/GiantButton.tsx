@@ -1,8 +1,10 @@
 import React from 'react';
 
 const GiantButton: React.FC<{
+    smallText?: boolean,
     children: React.ReactNode | string,
 }> = ({
+    smallText,
     children
 }) => {
         return (
@@ -66,7 +68,7 @@ const GiantButton: React.FC<{
                 </div>
 
                 {/* small text  */}
-                <p className=' text-secondary-white flex items-center gap-2'>
+                <p className={`text-secondary-white flex items-center gap-2 ${smallText ? 'block' : 'hidden'}`}>
                     <strong className=' text-white flex justify-center items-center gap-2 '>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 19" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
                             <path d="M16.5973 5.62013V7.90483L17.4949 7.3209L20.132 5.60534L17.4949 5.03613L16.5973 5.62013Z" fill="currentColor"></path>

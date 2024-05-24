@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
                         mt-10
                     '
                 >
-                    <GiantButton>Join thereal world</GiantButton>
+                    <GiantButton smallText>Join thereal world</GiantButton>
                 </div>
 
             </ContainerSmall>

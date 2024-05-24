@@ -48,9 +48,9 @@ const Menu: React.FC = () => {
 
             <div className={`
             ${isOpen ?
-                    'translate-x-0 opacity-100'
+                    'translate-x-0 opacity-100 visible'
                     :
-                    '-translate-x-3 opacity-0'
+                    '-translate-x-3 opacity-0 invisible'
                 }
                 bg-primary-background 
                 border 
