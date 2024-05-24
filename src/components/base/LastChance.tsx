@@ -6,21 +6,13 @@ const LastChance: React.FC = () => {
     return (
         <div
             className='
-                grid
-                grid-cols-2
-                justify-between
+                flex
+                gap-10
             '
         >
             {/* 1st box  */}
-            <div className='
-                flex
-                flex-col
-                items-end
-                justify-center
-                '>
-                <div
-                    className='w-7/12'
-                >
+            <div className='flex flex-col items-end justify-center w-full'>
+                <div className='w-7/12 pl-20'>
                     <div>
                         <MainTitle
                             title='2024 IS YOURLAST CHANCE'
@@ -53,7 +45,7 @@ const LastChance: React.FC = () => {
             </div>
 
             {/* 2nd box  */}
-            <div className=''>
+            <div className='flex justify-end w-10/12'>
                 <img src={lastChangeBanner} alt='lastChangeBanner' className='w-full' />
             </div>
         </div>
