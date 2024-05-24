@@ -11,7 +11,7 @@ const Faq: React.FC = () => {
                     <MainTitle title="FREQUENTLY ASKED QUESTIONS" />
                 </div>
 
-                <div className='flex flex-col gap-5 mx-28'>
+                <div className='flex flex-col gap-5 md:mx-28'>
                     <Accordion heading='Is this program suitable for women?' content={<>
                         <p><strong>THE REAL WORLD </strong>is suitable for any person, regardless of gender, who aspire to learn.</p>
                         <p><strong>THE REAL WORLD </strong> has a very large female membership base and have made some of our greatest success stories!</p>

@@ -7,9 +7,13 @@ const OneYear: React.FC = () => {
     return (
         <div
             className='
-                grid
-                grid-cols-2
-                justify-between
+                  flex
+                  flex-col-reverse
+                  md:flex-row
+                  justify-between
+                  my-10
+                  gap-10
+                  md:gap-0
             '
         >
             {/* 1st box  */}
@@ -23,11 +27,13 @@ const OneYear: React.FC = () => {
                 flex
                 flex-col
                 items-start
-                ml-20
+                mx-10
+                md:mx-0
+                md:ml-20
                 justify-center
                 '>
                 <div
-                    className='w-7/12 flex flex-col gap-10'
+                    className=' md:w-7/12 flex flex-col gap-10'
                 >
 
                     {/* heading  */}
