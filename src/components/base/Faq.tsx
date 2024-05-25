@@ -5,7 +5,7 @@ import Accordion from '../shared/Accordion';
 
 const Faq: React.FC = () => {
     return (
-        <div>
+        <div className='my-20'>
             <Container>
                 <div className='text-center mb-10'>
                     <MainTitle title="FREQUENTLY ASKED QUESTIONS" />

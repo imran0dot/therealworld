@@ -3,6 +3,7 @@ import oneYearBanner from '../../../src/assets/ano_defaced_1.webp'
 import MainTitle from '../shared/MainTitle';
 import GiantButton from '../ui/GiantButton';
 
+
 const OneYear: React.FC = () => {
     return (
         <div
