@@ -21,7 +21,7 @@ const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img
 const StudentReview: React.FC = () => {
     return (
         <div>
-            <div className='relative md:h-[150vh] overflow-hidden my-10'>
+            <div className='relative md:h-[200vh] overflow-hidden my-10'>
                 <Container>
                     <div className='text-center my-10'>
                         <MainTitle

@@ -9,54 +9,23 @@ const HeroVideo: React.FC = () => {
                         border 
                         border-secondary-white
                         border-opacity-10
-                        h-[300px]
-                        md:h-[500px]
                         p-2
                         mt-10
                         bg-secondary-background
                         relative
                     '
         >
-            {/* <iframe
-                        width={'100%'}
-                        height={'100%'}
-                        src="https://www.youtube.com/embed/IIQIb1w_vqM?si=XmItWQbtiz-zQgiR"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    ></iframe> */}
-            {/* 
-            <iframe
-                src="https://player.vimeo.com/video/849720933?h=592e908dec&title=0&byline=0&portrait=0"
-                width={'100%'}
-                height={'100%'}
-                allow="autoplay; fullscreen; picture-in-picture"
-            ></iframe> */}
-
-            {/* <Vimeo videoId={849720933} /> */}
 
             <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
                 <iframe
-                    width={'100%'}
-                    height={'100%'}
-                    src="https://player.vimeo.com/video/849720933?h=592e908dec&autoplay=1&title=0&byline=0&portrait=0"
+                    src={`https://player.vimeo.com/video/742590921?h=592e908dec&autoplay=1&title=0&byline=0&portrait=0&${isOverlay ? 'muted=1' : 'muted=0'}`}
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                    allow="autoplay; fullscreen; picture-in-picture; muted"
+                    allow="autoplay; fullscreen; picture-in-picture;"
                     allowFullScreen
                 ></iframe>
             </div>
 
-
-            {/* <video
-                        poster="https://customer-29d3r31yjz332bf4.cloudflarestream.com/b2d8112431648715e8dfd5aee6f8d0a3/thumbnails/thumbnail.jpg?time=&amp;height=600"
-                        className="css-14ogxpa"
-                        playsinline=""
-                        preload="none"
-                        autoplay={true}
-                        muted={false}
-                        src="https://www.youtube.com/embed/IIQIb1w_vqM?si=XmItWQbtiz-zQgiR">
-                    </video> */}
-
-            {/* video overlary  */}
+            {/* video overlay  */}
             <div
                 onClick={() => setIsOverlay(false)}
                 className={`

@@ -10,11 +10,11 @@ const OneYear: React.FC = () => {
             className='
                   flex
                   flex-col-reverse
-                  md:flex-row
+                  lg:flex-row
                   justify-between
                   my-10
                   gap-10
-                  md:gap-0
+                  lg:gap-0
             '
         >
             {/* 1st box  */}
@@ -29,12 +29,12 @@ const OneYear: React.FC = () => {
                 flex-col
                 items-start
                 mx-10
-                md:mx-0
-                md:ml-20
+                lg:mx-0
+                lg:ml-20
                 justify-center
                 '>
                 <div
-                    className=' md:w-7/12 flex flex-col gap-10'
+                    className=' lg:w-7/12 flex flex-col gap-10'
                 >
 
                     {/* heading  */}

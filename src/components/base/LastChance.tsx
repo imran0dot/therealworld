@@ -8,13 +8,13 @@ const LastChance: React.FC = () => {
             className='
                 flex
                 flex-col
-                md:flex-row
+                lg:flex-row
                 gap-10
             '
         >
             {/* 1st box  */}
             <div className='flex flex-col items-end justify-center w-full'>
-                <div className='md:w-7/12 mx-10 md:mx-0 md:pl-20'>
+                <div className='lg:w-7/12 mx-10 lg:mx-0 lg:pl-20'>
                     <div>
                         <MainTitle
                             title='2024 IS YOURLAST CHANCE'
@@ -47,7 +47,7 @@ const LastChance: React.FC = () => {
             </div>
 
             {/* 2nd box  */}
-            <div className='flex justify-end md:w-10/12'>
+            <div className='flex justify-end lg:w-10/12'>
                 <img src={lastChangeBanner} alt='lastChangeBanner' className='w-full' />
             </div>
         </div>
