@@ -23,27 +23,27 @@ const StudentReview: React.FC = () => {
         <div>
             <div className='relative md:h-[150vh] overflow-hidden my-10'>
                 <Container>
-                    <div className='text-center'>
+                    <div className='text-center my-10'>
                         <MainTitle
                             subTitle="THE REAL WORLD WINS"
                             title="OUR STUDENTS ARE WINNING"
                         />
                     </div>
 
-                    <div className='grid grid-cols-3 gap-5'>
-                        <div className='mt-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-5'>
+                        <div>
                             {
                                 images.slice(0, 4).map(image => <img className=' w-full rounded-lg border-2 border-opacity-55 border-transparent hover:border-secondary-border' key={image} src={image} />)
                             }
                         </div>
 
-                        <div className='mt-10'>
+                        <div>
                             {
                                 images.slice(4, 8).map(image => <img className=' w-full rounded-lg border-2 border-opacity-55 border-transparent hover:border-secondary-border' key={image} src={image} />)
                             }
                         </div>
 
-                        <div className='mt-10'>
+                        <div>
                             {
                                 images.slice(8, 12).map(image => <img className=' w-full rounded-lg border-2 border-opacity-55 border-transparent hover:border-secondary-border' key={image} src={image} />)
                             }
@@ -51,7 +51,7 @@ const StudentReview: React.FC = () => {
                     </div>
                 </Container>
 
-                <div className=' absolute bottom-0 h-[900px] w-full bg-gradient-to-t from-primary-background to-transparent'></div>
+                <div className=' absolute bottom-0 h-1/6 md:h-1/2 w-full bg-gradient-to-t from-primary-background to-transparent'></div>
             </div >
 
             <div>
