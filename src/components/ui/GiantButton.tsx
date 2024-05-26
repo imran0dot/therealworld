@@ -3,9 +3,11 @@ import React from 'react';
 const GiantButton: React.FC<{
     smallText?: boolean,
     children: React.ReactNode | string,
+    small?: boolean
 }> = ({
     smallText,
-    children
+    children,
+    small
 }) => {
         return (
             <div className='flex flex-col items-center gap-5'>
@@ -28,7 +30,7 @@ const GiantButton: React.FC<{
                 shadow-xl
                 hover:shadow-gold
             '>
-                    <button className='
+                    <button className={`
                     py-5
                     px-10
                     hover:px-11
@@ -41,9 +43,9 @@ const GiantButton: React.FC<{
                     uppercase
                     transition-all
                     duration-300
-                    text-3xl
                     giantButton
-        '>
+                    ${small ? 'text-1xl' : 'text-3xl'}
+                    `}>
                         <div className='sticky z-20 w-full h-full'>
                             {children}
                         </div>

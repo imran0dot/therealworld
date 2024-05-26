@@ -16,7 +16,7 @@ const HeroVideo: React.FC = () => {
                     '
         >
 
-            <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+            <div className='relative pb-[53%] mt-0 h-0'>
                 <iframe
                     src={`https://player.vimeo.com/video/742590921?h=592e908dec&autoplay=1&title=0&byline=0&portrait=0&${isOverlay ? 'muted=1' : 'muted=0'}`}
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}

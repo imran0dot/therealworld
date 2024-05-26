@@ -1,0 +1,18 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="15" height="376" viewBox="0 0 15 376" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<circle opacity="0.25" cx="7.5" cy="52.5" r="7" stroke="#FFFFFF" fill="none"></circle>
+<circle opacity="0.25" cx="7.5" cy="52.5" r="2.5" fill="#FFFFFF"></circle>
+<circle cx="7.5" cy="368.5" r="7" stroke="#AD8B3A" fill="none"></circle>
+<circle cx="7.5" cy="368.5" r="2.5" fill="#D0B167"></circle>
+<path opacity="0.25" d="M7.49997 60L7.5 361" stroke="#FFFFFF" fill="none"></path>
+<path d="M7.49997 60L7.5 361" stroke="url(&quot;#paint0_linear_922_452&quot;)" fill="none"></path>
+<path opacity="0.25" d="M7.5 0L7.5 45" stroke="#FFFFFF" fill="none"></path>
+<defs>
+<linearGradient id="paint0_linear_922_452" x1="4.55826" y1="317.353" x2="4.55827" y2="165.882" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AD8B3A"></stop>
+<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+</linearGradient>
+<linearGradient id="paint0_linear_922_452" x1="4.55826" y1="317.353" x2="4.55827" y2="165.882" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AD8B3A"></stop>
+<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+</linearGradient></defs>
+</svg>

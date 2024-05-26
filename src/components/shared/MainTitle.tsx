@@ -4,16 +4,27 @@ import titleBackground from '../../assets/heading-texture_1heading-texture.webp'
 interface Title {
     title: React.ReactNode | string,
     subTitle?: React.ReactNode | string,
+    fontSize?: string,
+    gradient?: boolean
 }
 
-const MainTitle: React.FC<Title> = ({ title, subTitle }) => {
+const MainTitle: React.FC<Title> = ({ title, subTitle, fontSize, gradient }) => {
 
     const headingStyles = {
         WebkitTextFillColor: 'transparent',
-        backgroundImage: `url(${titleBackground})`,
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text'
     };
+
+    const gradientStyle = {
+        "backgroundImage": `url(${titleBackground}), linear-gradient(125deg, #fff 85%, rgba(255, 255, 255, 0))`,
+    };
+
+    const isGradient = gradient ? gradientStyle : {
+        backgroundImage: `url(${titleBackground})`,
+    };
+
+    console.log(isGradient);
 
     return (
         <div>
@@ -21,15 +32,17 @@ const MainTitle: React.FC<Title> = ({ title, subTitle }) => {
                 subTitle && <div style={headingStyles} className='bg-white'>{subTitle}</div>
             }
             <div
-                style={headingStyles}
-                className='
-                    font-semibold 
-                    uppercase 
-                    text-3xl
-                    md:text-6xl 
-                    bg-white
-                    font-secondary
-                '
+                style={{ ...headingStyles, ...isGradient }}
+                className={`
+                font-semibold 
+                uppercase 
+                ${fontSize ? fontSize : 'text-3xl md:text-6xl '}
+                
+                bg-white
+                font-secondary
+                
+                `}
+
             >{title}</div>
         </div>
     );

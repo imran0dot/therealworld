@@ -20,13 +20,13 @@ const VideoCard: React.FC<VideoCardType> = ({ cardDetails }) => {
     const [isOverlay, setIsOverlay] = useState(true);
 
     return (
-        <div className='p-[2px] group  relative rounded-md '>
+        <div className='p-[1px] group relative rounded-md '>
 
-            <div className='relative bg-[#111C22] rounded-md overflow-hidden'>
+            <div className='relative bg-[#111C22] rounded-sm overflow-hidden'>
 
-                <div className='absolute transition-all duration-300 w-0 group-hover:w-full h-1 bg-gradient-to-tr from-transparent to-secondary-white top-0 rounded-md'></div>
+                <div className='absolute transition-all duration-300 w-0 group-hover:w-full h-[1px] bg-gradient-to-tr from-transparent via-secondary-white to-transparent top-0 rounded-md'></div>
 
-                <div className='absolute transition-all duration-300 left-0 w-0 group-hover:w-1 h-0 group-hover:h-96 bg-gradient-to-tr from-secondary-white to-transparent top-0 rounded-md'></div>
+                <div className='absolute transition-all duration-300 left-0 w-[1px] h-0 group-hover:h-full bg-gradient-to-tr from-transparent via-secondary-white to-transparent top-0 rounded-md'></div>
 
                 <div className='absolute w-full'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 516 300" fill="#fff" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
@@ -121,7 +121,7 @@ const VideoCard: React.FC<VideoCardType> = ({ cardDetails }) => {
                         <GradientTitle>{name}</GradientTitle>
                     </h4>
 
-                    <p className={`group-hover:text-white text-secondary-white transition-all duration-300 text-lg`}>{information}</p>
+                    <p className={`group-hover:text-white text-secondary-white transition-all duration-300 text-1xl`}>{information}</p>
                 </div>
 
 

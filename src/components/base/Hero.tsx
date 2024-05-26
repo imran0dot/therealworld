@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
     return (
         <div
             style={{ "backgroundImage": `url(${heroImage})` }}
-            className='min-h-screen md:-mt-20 -mt-10'
+            className='min-h-screen md:-mt-28 -mt-10'
         >
             <ContainerSmall>
 

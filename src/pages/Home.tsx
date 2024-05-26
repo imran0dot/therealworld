@@ -5,6 +5,7 @@ import OneYear from '../components/base/OneYear';
 import Faq from '../components/base/Faq';
 import StudentReview from '../components/base/StudentReview';
 import CreationMethods from '../components/base/CreationMethods';
+import NewSkills from '../components/shared/NewSkills';
 
 const Home: React.FC = () => {
     return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
             <LastChance />
             <OneYear />
             <CreationMethods />
+            <NewSkills />
             <StudentReview />
             <Faq />
         </div>
