@@ -59,6 +59,7 @@ const Menu: React.FC = () => {
                 fixed
                 w-[400px]
                 mt-5
+                z-[9999]
                 transition-all
                 duration-300
                 p-5

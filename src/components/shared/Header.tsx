@@ -5,7 +5,7 @@ import SimpleButton from '../ui/SimpleButton';
 
 const Header: React.FC = () => {
     return (
-        <div className='py-10 sticky top-0 left-0 w-full'>
+        <div className='py-10 sticky z-50 top-0 left-0 w-full'>
             <Container>
                 <div className='grid grid-cols-2 justify-center items-center'>
                     <div>
