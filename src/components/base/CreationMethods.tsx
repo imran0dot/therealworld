@@ -84,7 +84,7 @@ const CreationMethods: React.FC = () => {
                 </div>
 
 
-                <div className='grid grid-cols-1 md:grid-cols-3 mt-10'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-[2px] mt-10'>
                     {cardInfos.map(card => <VideoCard key={card.name} cardDetails={card} />)}
                 </div>
             </Container>
