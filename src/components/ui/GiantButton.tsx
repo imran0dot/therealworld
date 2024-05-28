@@ -19,8 +19,8 @@ const GiantButton: React.FC<{
                     className='
                 font-secondary
                 transition-all
-                duration-300
-                p-1
+                duration-500
+                p-[3px]
                 flex
                 justify-center
                 items-center
@@ -28,7 +28,7 @@ const GiantButton: React.FC<{
                 relative
                 overflow-hidden
                 shadow-xl
-                hover:shadow-gold
+                hover:shadow-secondary
             '>
                     <button className={`
                     py-5
@@ -42,7 +42,7 @@ const GiantButton: React.FC<{
                     font-semibold
                     uppercase
                     transition-all
-                    duration-300
+                    duration-500
                     giantButton
                     ${small ? 'text-1xl' : 'text-3xl'}
                     `}>

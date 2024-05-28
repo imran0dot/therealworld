@@ -24,6 +24,9 @@ export default {
       },
       fontFamily: {
         'secondary': "Clashdisplay Variable, sans-serif"
+      }, 
+      boxShadow: {
+        'secondary': '0 0 40px 2px #ffcf23d4'
       }
     },
   },

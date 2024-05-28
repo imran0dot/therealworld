@@ -37,7 +37,7 @@ const MainTitle: React.FC<Title> = ({ title, subTitle, fontSize, gradient }) => 
                 font-semibold 
                 uppercase 
                 ${fontSize ? fontSize : 'text-3xl md:text-6xl '}
-                
+                leading-tight
                 bg-white
                 font-secondary
                 

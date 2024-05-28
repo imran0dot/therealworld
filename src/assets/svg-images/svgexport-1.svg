@@ -1,4 +1,81 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
-<path d="M6.5 0C4.77615 0 3.12271 0.684819 1.90379 1.90379C0.684768 3.12274 0 4.77598 0 6.5C0 8.22402 0.684819 9.87729 1.90379 11.0962C3.12274 12.3152 4.77598 13 6.5 13C8.22402 13 9.87729 12.3152 11.0962 11.0962C12.3152 9.87726 13 8.22402 13 6.5C13 5.35901 12.6997 4.2382 12.1292 3.25C11.5587 2.26188 10.7381 1.44134 9.75008 0.870899C8.76197 0.300405 7.64114 8.47181e-05 6.50008 8.47181e-05L6.5 0ZM6.5 11.375C5.20706 11.375 3.96703 10.8614 3.0528 9.94717C2.1386 9.0329 1.62497 7.79286 1.62497 6.49997C1.62497 5.20708 2.1386 3.967 3.0528 3.05277C3.96707 2.13857 5.20711 1.62493 6.5 1.62493C7.79289 1.62493 9.03297 2.13857 9.9472 3.05277C10.8614 3.96703 11.375 5.20708 11.375 6.49997C11.375 7.79286 10.8614 9.03294 9.9472 9.94717C9.03294 10.8614 7.79289 11.375 6.5 11.375Z" fill="#FFFFFF" fill-opacity="0.5"></path>
-<path d="M8.32813 6.50001H6.90625C6.79854 6.50001 6.69519 6.45723 6.61902 6.381C6.54278 6.30482 6.5 6.20149 6.5 6.09376V4.06251C6.5 3.77224 6.34514 3.50398 6.09375 3.35885C5.84235 3.21372 5.53265 3.21372 5.28125 3.35885C5.02985 3.50399 4.875 3.77224 4.875 4.06251V6.09376C4.875 6.63245 5.08904 7.14913 5.46995 7.53006C5.85088 7.91098 6.36755 8.12501 6.90625 8.12501H8.32813C8.61839 8.12501 8.88665 7.97016 9.03178 7.71876C9.17692 7.46736 9.17692 7.15766 9.03178 6.90626C8.88665 6.65486 8.61839 6.50001 8.32813 6.50001Z" fill="#FFFFFF" fill-opacity="0.5"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 516 300" fill="#fff" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+                        <g clip-path="url(#clip0_850_871)">
+                            <g opacity="0.02">
+                                <line x1="12.4883" y1="0.000488303" x2="12.4882" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="24.4883" y1="0.000488303" x2="24.4882" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="36.4883" y1="0.000488303" x2="36.4882" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="48.4883" y1="0.000488303" x2="48.4882" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="60.4883" y1="0.000488303" x2="60.4882" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="72.4883" y1="0.000488303" x2="72.4883" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="84.4883" y1="0.000488303" x2="84.4883" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="96.4883" y1="0.000488303" x2="96.4883" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="108.488" y1="0.000488303" x2="108.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="120.488" y1="0.000488303" x2="120.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="132.488" y1="0.000488303" x2="132.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="144.488" y1="0.000488303" x2="144.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="156.488" y1="0.000488303" x2="156.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="168.488" y1="0.000488303" x2="168.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="180.488" y1="0.000488303" x2="180.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="192.488" y1="0.000488303" x2="192.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="204.488" y1="0.000488303" x2="204.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="216.488" y1="0.000488303" x2="216.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="228.488" y1="0.000488303" x2="228.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="240.488" y1="0.000488303" x2="240.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="252.488" y1="0.000488303" x2="252.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="264.488" y1="0.000488303" x2="264.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="276.488" y1="0.000488303" x2="276.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="288.488" y1="0.000488303" x2="288.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="300.488" y1="0.000488303" x2="300.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="312.488" y1="0.000488303" x2="312.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="324.488" y1="0.000488303" x2="324.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="336.488" y1="0.000488303" x2="336.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="348.488" y1="0.000488303" x2="348.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="360.488" y1="0.000488303" x2="360.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="372.488" y1="0.000488303" x2="372.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="384.488" y1="0.000488303" x2="384.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="396.488" y1="0.000488303" x2="396.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="408.488" y1="0.000488303" x2="408.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="420.488" y1="0.000488303" x2="420.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="432.488" y1="0.000488303" x2="432.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="444.488" y1="0.000488303" x2="444.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="456.488" y1="0.000488303" x2="456.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="468.488" y1="0.000488303" x2="468.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="480.488" y1="0.000488303" x2="480.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="492.488" y1="0.000488303" x2="492.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="504.488" y1="0.000488303" x2="504.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="516.488" y1="0.000488303" x2="516.488" y2="780" stroke-width="2" stroke="#ffff"></line>
+                            </g>
+                            <g opacity="0.02">
+                                <line x1="1440" y1="0.500122" x2="-4.37115e-08" y2="0.499996" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="12.5001" x2="-4.37115e-08" y2="12.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="24.5001" x2="-4.37115e-08" y2="24.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="36.5001" x2="-4.37115e-08" y2="36.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="48.4999" x2="-4.37115e-08" y2="48.4998" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="60.4999" x2="-4.37115e-08" y2="60.4998" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="72.5" x2="-4.37115e-08" y2="72.4999" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="84.5" x2="-4.37115e-08" y2="84.4999" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="96.5" x2="-4.37115e-08" y2="96.4999" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="108.5" x2="-4.37115e-08" y2="108.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="120.5" x2="-4.37115e-08" y2="120.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="132.5" x2="-4.37115e-08" y2="132.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="144.5" x2="-4.37115e-08" y2="144.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="156.5" x2="-4.37115e-08" y2="156.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="168.5" x2="-4.37115e-08" y2="168.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="180.5" x2="-4.37115e-08" y2="180.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="192.5" x2="-4.37115e-08" y2="192.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="204.5" x2="-4.37115e-08" y2="204.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="216.5" x2="-4.37115e-08" y2="216.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="228.5" x2="-4.37115e-08" y2="228.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="240.5" x2="-4.37115e-08" y2="240.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="252.5" x2="-4.37115e-08" y2="252.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="264.5" x2="-4.37115e-08" y2="264.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="276.5" x2="-4.37115e-08" y2="276.5" stroke-width="2" stroke="#ffff"></line>
+                                <line x1="1440" y1="288.5" x2="-4.37115e-08" y2="288.5" stroke-width="2" stroke="#ffff"></line>
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_850_871">
+                                <rect width="516" height="300" fill="#ffff"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>

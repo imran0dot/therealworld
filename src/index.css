@@ -22,6 +22,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: yellow;
+  background-color: #ffa500b3;
   filter: blur(300px) ;
 }
