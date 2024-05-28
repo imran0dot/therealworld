@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { IconType } from 'react-icons';
 import GradientTitle from './GradientTitle';
 import chackbgSVG from '../../assets/svg-images/svgexport-1.svg'
 import playBtn from '../../assets/play-btn.png'
-import thambnail from '../../assets/video-thumb/thumb_1.jpg'
-
 interface VideoCardType {
     cardDetails: {
-        icon: IconType,
+        icon: string,
         name: string,
         information: string,
         video?: string,
@@ -16,18 +13,20 @@ interface VideoCardType {
 }
 
 const VideoCard: React.FC<VideoCardType> = ({ cardDetails }) => {
-    const { icon: Icon, name, information, video, poster } = cardDetails;
+    const { icon, name, information, video, poster } = cardDetails;
     const [isOverlay, setIsOverlay] = useState(true);
 
+    console.log(video);
     return (
 
         <div className='pb-0 group relative rounded-sm overflow-hidden mb-10'>
-            <div className='bg-[#111C22] bg-opacity-30 group-hover:bg-opacity-100 transition-all duration-500 overflow-hidden rounded-sm'>
+            <div className='bg-[#111C22] bg-opacity-30 group-hover:bg-opacity-100 transition-all duration-500 overflow-hidden rounded-md'>
 
                 {/* info related  */}
                 <div
-                    style={{ backgroundImage: `url(${chackbgSVG})` }}
                     className='relative'>
+
+                    <img className='absolute opacity-0 group-hover:opacity-100 transition-all duration-500' src={chackbgSVG} alt="" />
 
                     <div className=' bg-gradient-to-l from-transparent via-secondary-white to-transparent rounded-sm absolute w-0  group-hover:w-full h-[1px] left-0 top-0 scale-100 transition-all duration-500 '>
                     </div>
@@ -36,12 +35,12 @@ const VideoCard: React.FC<VideoCardType> = ({ cardDetails }) => {
                     </div>
 
                     <div
-                        className='min-h-60 gap-4 grid grid-flow-row p-4 transition-all duration-300 relative'
+                        className='min-h-60 gap-2 grid grid-flow-row p-4 transition-all duration-300 relative'
                     >
-                        <Icon className='text-yellow text-3xl' />
+                        <img src={icon} alt="" className='mb-4' />
                         <GradientTitle>{name}</GradientTitle>
 
-                        <p className={`group-hover:text-white text-secondary-white transition-all duration-300 text-1xl`}>{information}</p>
+                        <p className={`group-hover:text-white text-secondary-white transition-all duration-500 text-1xl`}>{information}</p>
                     </div>
                 </div>
 
@@ -50,14 +49,14 @@ const VideoCard: React.FC<VideoCardType> = ({ cardDetails }) => {
                 {isOverlay ?
 
                     <div 
-                    style={{backgroundImage: `url(${thambnail})`}}
+                    style={{backgroundImage: `url(${poster})`}}
                     className='h-60 w-full flex justify-center items-center mt-5'>
                         {/* video overlay  */}
 
                             <img
                                 onClick={() => setIsOverlay(!isOverlay)}
                                 src={playBtn} alt='play'
-                                className='w-2/12' />
+                                className='w-2/12 cursor-pointer' />
                     </div>
 
                     :
