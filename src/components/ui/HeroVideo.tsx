@@ -84,7 +84,7 @@ const HeroVideo: React.FC = () => {
                 subTitle='Content creation'
                 left={'-left-28'}
                 bottom='bottom-20'
-                isGold />
+                 />
         </div>
     )
 }
