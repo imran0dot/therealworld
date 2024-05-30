@@ -30,7 +30,7 @@ const StudentReview: React.FC = () => {
                         />
                     </div>
 
-                    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-5'>
+                    <div  className='grid grid-cols-1 md:grid-cols-3 md:gap-5 '>
                         <div>
                             {
                                 images.slice(0, 4).map(image => <img className=' w-full rounded-lg border-2 border-opacity-55 border-transparent hover:border-secondary-border' key={image} src={image} />)
@@ -53,7 +53,6 @@ const StudentReview: React.FC = () => {
 
                 <div className=' absolute bottom-0 h-1/6 md:h-1/2 w-full bg-gradient-to-t from-primary-background to-transparent'></div>
             </div >
-
             <div>
                 <GiantButton smallText>Join The Real World</GiantButton>
             </div>

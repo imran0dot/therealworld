@@ -95,7 +95,7 @@ const CreationMethods: React.FC = () => {
 
 
     return (
-        <div>
+        <div className='my-28'>
             <Container>
                 <div className='text-center'>
                     <MainTitle
