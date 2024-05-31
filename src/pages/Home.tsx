@@ -8,6 +8,7 @@ import CreationMethods from '../components/base/CreationMethods';
 import NewSkills from '../components/shared/NewSkills';
 import AskYourself from '../components/base/AskYourself';
 import ExclusiveFeatures from '../components/base/ExclusiveFeatures';
+import Pricing from '../components/base/Pricing';
 
 const Home: React.FC = () => {
     return (
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
             <NewSkills />
             <ExclusiveFeatures />
             <AskYourself />
+            <Pricing />
             <Faq />
         </div>
     );

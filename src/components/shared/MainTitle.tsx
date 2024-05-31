@@ -24,8 +24,6 @@ const MainTitle: React.FC<Title> = ({ title, subTitle, fontSize, gradient }) => 
         backgroundImage: `url(${titleBackground})`,
     };
 
-    console.log(isGradient);
-
     return (
         <div>
             {
