@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BiArrowFromTop } from 'react-icons/bi';
+import { IoIosArrowDown } from "react-icons/io";
 
 interface AccordionType {
     heading: string;
@@ -14,18 +14,19 @@ const Accordion: React.FC<AccordionType> = ({ heading, content }) => {
             {/* heading  */}
             <div
                 onClick={() => setIsOpen(!isOpen)}
-                className='flex justify-between p-5 bg-secondary-background'>
+                className='flex justify-between p-5 bg-secondary-background cursor-pointer'>
                 <h4 className='text-xl text-white'>{heading}</h4>
-                <div className={`text-white text-4xl transition-all duration-300 ${isOpen ? '-rotate-180' : 'rotate-0'}`}> <BiArrowFromTop /></div>
+                <div className={` text-2xl transition-all duration-300 ${isOpen ? 'rotate-180 text-white' : 'rotate-0 text-secondary-white'}`}> <IoIosArrowDown /></div>
             </div>
 
             {/* content */}
-            <div className={`
+            <div
+                className={`
             text-xl 
             overflow-hidden
             duration-300
             transition-all
-            ${isOpen ? 'h-40' : 'h-0'}
+            ${isOpen ? 'h-min' : 'h-0'}
             `}>
                 <div className={`p-10 
                  flex 
