@@ -9,6 +9,7 @@ import NewSkills from '../components/shared/NewSkills';
 import AskYourself from '../components/base/AskYourself';
 import ExclusiveFeatures from '../components/base/ExclusiveFeatures';
 import Pricing from '../components/base/Pricing';
+import StepByStep from '../components/base/StepByStep';
 
 const Home: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
             <Hero />
             <LastChance />
             <OneYear />
+            <StepByStep />
             <StudentReview />
             <CreationMethods />
             <NewSkills />

@@ -1,7 +1,6 @@
 import React from 'react';
 import pricingBG from '../../assets/img/pricing-bg.webp'
 import MainTitle from '../shared/MainTitle';
-import SimpleButton from '../ui/SimpleButton';
 import clockSVG from '../../assets/svg-images/svgexport-43.svg'
 import handSVG from '../../assets/svg-images/svgexport-47.svg'
 import dollerSVG from '../../assets/svg-images/svgexport-49.svg'

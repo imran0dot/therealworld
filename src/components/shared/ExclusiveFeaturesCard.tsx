@@ -1,6 +1,5 @@
 import React from 'react';
-import GradientTitle from '../ui/GradientTitle';
-import CheckListItem from '../ui/CheckListItem';
+import FeatureList from '../ui/FeatureList';
 
 interface TExclusiveFeaturesCard {
     item: {
@@ -26,13 +25,8 @@ const ExclusiveFeaturesCard: React.FC<TExclusiveFeaturesCard> = ({ item }) => {
                 <div className='w-32 h-10 bg-yellow bg-opacity-50 blur-3xl absolute right-0 bottom-0'></div>
             </div>
 
-            <div className='flex flex-col gap-3 '>
-                <GradientTitle>{title}</GradientTitle>
-                <div className='flex flex-col gap-3'>
-                    {
-                        features.map((feature, index) => <CheckListItem key={index} title={feature} />)
-                    }
-                </div>
+            <div>
+                <FeatureList title={title} features={features} />
             </div>
 
         </div>
