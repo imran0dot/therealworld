@@ -21,16 +21,16 @@ const StepByStep: React.FC = () => {
         const arrow = arrowRef.current;
         const parent = parentRef.current as HTMLDivElement | null;
 
-        // GSAP animation
         if (arrow && parent) {
-            // GSAP animation
             gsap.to(arrow, {
-                y: parent.clientHeight,
+                y: parent.clientHeight * 1.2,
+                // translateY: parent.clientHeight,
                 ease: "power1.inOut",
+                duration: 5,
                 scrollTrigger: {
                     trigger: arrow,
                     start: "top bottom",
-                    // end: "bottom top",
+                    end: "bottom top",
                     scrub: 0.05,
                     markers: true
                 }
@@ -50,20 +50,20 @@ const StepByStep: React.FC = () => {
 
                 <div
                     ref={parentRef}
-                    className='bg-center flex flex-col gap-20 items-center relative w-full mt-20 overflow-hidden min-h-screen'
+                    className='bg-center flex flex-col gap-20 md:items-center relative w-full mt-20 min-h-screen overflow-hidden'
                     style={{ backgroundImage: `url('https://www.jointherealworld.com/revamp/images/cubes-bg.svg')` }}>
 
 
                     {/* box one  */}
                     <div>
                         <Container>
-                            <div className='grid grid-cols-2 px-10'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 px-10'>
                                 <div className='relative flex justify-center items-center'>
                                     <img className='z-20' width={'80%'} src={ImageOne} alt="" />
                                     <div className='w-20 h-20 left-20 top-20 opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
                                     <div className='w-20 h-20 trans opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
                                 </div>
-                                <div className='px-10'>
+                                <div className='md:px-10'>
                                     <FeatureList
                                         title='VITAL LIFE LESSONS'
                                         features={
@@ -82,13 +82,13 @@ const StepByStep: React.FC = () => {
                     {/* box two  */}
                     <div>
                         <Container>
-                            <div className='grid grid-cols-2 px-10'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 px-10'>
                                 <div className='relative flex justify-center items-center'>
                                     <img className='z-20' width={'80%'} src={ImageTwo} alt="" />
                                     <div className='w-20 h-20 left-20 top-20 opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
                                     <div className='w-20 h-20 trans opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
                                 </div>
-                                <div className='px-10'>
+                                <div className='md:px-10'>
                                     <FeatureList
                                         title='VITAL LIFE LESSONS'
                                         features={
@@ -106,13 +106,13 @@ const StepByStep: React.FC = () => {
                     {/* box three  */}
                     <div>
                         <Container>
-                            <div className='grid grid-cols-2 px-10'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 px-10'>
                                 <div className='relative flex justify-center items-center'>
                                     <img className='z-20' width={'80%'} src={ImageThree} alt="" />
                                     <div className='w-20 h-20 left-20 top-20 opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
                                     <div className='w-20 h-20 trans opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
                                 </div>
-                                <div className='px-10'>
+                                <div className='md:px-10'>
                                     <FeatureList
                                         title='VITAL LIFE LESSONS'
                                         features={
@@ -128,9 +128,14 @@ const StepByStep: React.FC = () => {
                     </div>
 
 
-                        <div className='absolute h-full w-[5px] bg-gradient-to-b from-transparent to-white'></div>
-                        <img
-                            ref={arrowRef} className='absolute top-0 w-10 object-scale-down' src={arrowSVG} alt="" />
+                    <div className='absolute h-full w-[5px] bg-gradient-to-b from-transparent to-white ml-2 md:ml-0'></div>
+
+                    <div 
+                     ref={arrowRef}
+                      className='absolute flex flex-col justify-start items-center top-0 bottom-0'>
+                        <img className='top-0 object-scale-down z-20 ' src={arrowSVG} alt="" />
+                        <div className='absolute h-full w-[5px] bg-secondary-dark '></div>
+                    </div>
                 </div>
 
             </div>
