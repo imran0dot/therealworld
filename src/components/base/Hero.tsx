@@ -5,18 +5,22 @@ import MainTitle from '../shared/MainTitle';
 import ContainerSmall from '../shared/ContainerSmall';
 import GiantButton from '../ui/GiantButton';
 import HeroVideo from '../ui/HeroVideo';
+import { motion } from 'framer-motion'
 
 const Hero: React.FC = () => {
 
     return (
-        <div
+        <motion.div
+            initial={{ y: 100 }}
+            animate={{ y: 0 }}
             style={{ "backgroundImage": `url(${heroImage})` }}
             className='min-h-screen md:-mt-28 -mt-10'
         >
             <ContainerSmall>
 
                 {/* logo  */}
-                <div className='justify-center mx-auto'>
+                <div
+                    className='justify-center mx-auto'>
                     <p className='text-center text-secondary-white uppercase text-[10px]'>The Real World</p>
                     <Logo />
                 </div>
@@ -41,20 +45,18 @@ const Hero: React.FC = () => {
 
 
                 {/* video box  */}
-                <HeroVideo />
+                <div>
+                    <HeroVideo />
+                </div>
 
 
                 {/* button  */}
-                <div
-                    className='
-                        mt-10
-                    '
-                >
+                <div className='mt-10'>
                     <GiantButton smallText>Join thereal world</GiantButton>
                 </div>
 
             </ContainerSmall>
-        </div>
+        </motion.div>
     );
 };
 

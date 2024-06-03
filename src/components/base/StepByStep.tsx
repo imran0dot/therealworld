@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Container from '../shared/Container';
 import MainTitle from '../shared/MainTitle';
 import ImageOne from '../../assets/img/step-path-01.webp'
@@ -6,7 +6,39 @@ import ImageTwo from '../../assets/img/step-path-02.webp'
 import ImageThree from '../../assets/img/step-path-03.webp'
 import FeatureList from '../ui/FeatureList';
 
+import arrowSVG from '../../assets/svg-images/svgexport-23.svg'
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+
 const StepByStep: React.FC = () => {
+    const arrowRef = useRef(null);
+    const parentRef = useRef(null);
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+        const arrow = arrowRef.current;
+        const parent = parentRef.current as HTMLDivElement | null;
+
+        // GSAP animation
+        if (arrow && parent) {
+            // GSAP animation
+            gsap.to(arrow, {
+                y: parent.clientHeight,
+                ease: "power1.inOut",
+                scrollTrigger: {
+                    trigger: arrow,
+                    start: "top bottom",
+                    // end: "bottom top",
+                    scrub: 0.05,
+                    markers: true
+                }
+            });
+        }
+    }, []);
+
+
     return (
         <div>
             <div className='relative flex flex-col justify-center items-center'>
@@ -17,8 +49,11 @@ const StepByStep: React.FC = () => {
                 </div>
 
                 <div
-                    className='bg-center flex flex-col gap-20 items-center relative w-full mt-20'
+                    ref={parentRef}
+                    className='bg-center flex flex-col gap-20 items-center relative w-full mt-20 overflow-hidden min-h-screen'
                     style={{ backgroundImage: `url('https://www.jointherealworld.com/revamp/images/cubes-bg.svg')` }}>
+
+
                     {/* box one  */}
                     <div>
                         <Container>
@@ -93,7 +128,9 @@ const StepByStep: React.FC = () => {
                     </div>
 
 
-                    <div className='absolute top-0 bottom-0 w-[1px] bg-slate-200'></div>
+                        <div className='absolute h-full w-[5px] bg-gradient-to-b from-transparent to-white'></div>
+                        <img
+                            ref={arrowRef} className='absolute top-0 w-10 object-scale-down' src={arrowSVG} alt="" />
                 </div>
 
             </div>

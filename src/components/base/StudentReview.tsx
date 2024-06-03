@@ -14,23 +14,30 @@ import Img10 from '../../assets/reviews/students-wins-10_1students-wins-10.webp'
 import Img11 from '../../assets/reviews/students-wins-11_1students-wins-11.webp'
 import Img12 from '../../assets/reviews/students-wins-12_1students-wins-12.webp'
 import GiantButton from '../ui/GiantButton';
+import { motion } from 'framer-motion'
 
 
 const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11, Img12]
 
 const StudentReview: React.FC = () => {
     return (
-        <div>
+        <div className='my-32'>
             <div className='relative md:h-[200vh] overflow-hidden my-10'>
                 <Container>
-                    <div className='text-center my-10'>
+                    <motion.div
+                        initial={{ y: 100 }}
+                        animate={{ y: 0 }}
+                        className='text-center my-10'>
                         <MainTitle
                             subTitle="THE REAL WORLD WINS"
                             title="OUR STUDENTS ARE WINNING"
                         />
-                    </div>
+                    </motion.div>
 
-                    <div  className='grid grid-cols-1 md:grid-cols-3 md:gap-5 '>
+                    <motion.div
+                        initial={{ y: 100, opacity: 0 }}
+                        animate={{ y: 0, opacity: 100 }} 
+                        className='grid grid-cols-1 md:grid-cols-3 md:gap-5 '>
                         <div>
                             {
                                 images.slice(0, 4).map(image => <img className=' w-full rounded-lg border-2 border-opacity-55 border-transparent hover:border-secondary-border' key={image} src={image} />)
@@ -48,7 +55,7 @@ const StudentReview: React.FC = () => {
                                 images.slice(8, 12).map(image => <img className=' w-full rounded-lg border-2 border-opacity-55 border-transparent hover:border-secondary-border' key={image} src={image} />)
                             }
                         </div>
-                    </div>
+                    </motion.div>
                 </Container>
 
                 <div className=' absolute bottom-0 h-1/6 md:h-1/2 w-full bg-gradient-to-t from-primary-background to-transparent'></div>
