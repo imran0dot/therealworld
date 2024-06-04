@@ -10,11 +10,13 @@ import AskYourself from '../components/base/AskYourself';
 import ExclusiveFeatures from '../components/base/ExclusiveFeatures';
 import Pricing from '../components/base/Pricing';
 import StepByStep from '../components/base/StepByStep';
+import Slider from '../components/base/Slider';
 
 const Home: React.FC = () => {
     return (
         <div>
             <Hero />
+            <Slider />
             <LastChance />
             <OneYear />
             <StepByStep />

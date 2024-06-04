@@ -25,3 +25,59 @@ body {
   background-color: #ffa500b3;
   filter: blur(300px) ;
 }
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-position: center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  padding: 8px 16px;
+  border-radius: 30px;
+  width: 75px;
+  border: 2px solid #FFB700;
+  color: red;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+  box-shadow: 0px 0px 10px 10px rgba(255, 164, 73, 0.193);
+}
+.swiper-button-prev {
+  background-image: url("../src/assets/svg-images/svgexport-12.svg");
+}
+
+.swiper-button-next {
+  background-image: url("../src/assets/svg-images/svgexport-13.svg");
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-pagination-bullet{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+
+/* Ensure Swiper's wrapper and slide elements have a defined overflow */
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  transition: opacity 0.3s ease !important;
+}
+
+ .swiper-slide-active{
+  opacity: 1 !important;
+  filter: blur(0px) !important;
+}
+.swiper-slide{
+  opacity: 0.5;
+  filter: blur(10px);
+}
