@@ -11,12 +11,11 @@ const LastChance: React.FC = () => {
                 flex-col
                 lg:flex-row
                 gap-10
-                py-20
             '
         >
             {/* 1st box  */}
             <div className='flex flex-col items-end justify-center w-full'>
-                <div className='lg:w-8/12 mx-10 lg:mx-0 lg:pl-28 flex flex-col gap-10'>
+                <div className=' mx-10 lg:mx-0 lg:pl-28 flex flex-col gap-10'>
                     {/* title  */}
                     <motion.div
                         initial={{ opacity: 0 }}

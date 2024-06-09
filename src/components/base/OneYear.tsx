@@ -35,7 +35,7 @@ const OneYear: React.FC = () => {
                 justify-center
                 '>
                 <div
-                    className=' lg:w-7/12 flex flex-col gap-10'
+                    className=' lg:pr-[30%] pr-0 flex flex-col gap-10'
                 >
 
                     {/* heading  */}

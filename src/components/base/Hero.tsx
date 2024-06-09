@@ -14,15 +14,17 @@ const Hero: React.FC = () => {
             initial={{ y: 100 }}
             animate={{ y: 0 }}
             style={{ "backgroundImage": `url(${heroImage})` }}
-            className='min-h-screen md:-mt-28 -mt-10'
+            className='min-h-screen md:-mt-28 -mt-32'
         >
             <ContainerSmall>
 
                 {/* logo  */}
                 <div
-                    className='justify-center mx-auto'>
+                    className='flex  flex-col justify-center items-center mx-auto pt-20 relative'>
                     <p className='text-center text-secondary-white uppercase text-[10px]'>The Real World</p>
                     <Logo />
+                    
+                    <div className='w-40 h-20 opacity-30 bg-yellow absolute rotate-45 blur-3xl'></div>
                 </div>
 
                 {/* title  */}

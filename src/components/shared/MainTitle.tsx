@@ -27,14 +27,14 @@ const MainTitle: React.FC<Title> = ({ title, subTitle, fontSize, gradient }) => 
     return (
         <div>
             {
-                subTitle && <div style={headingStyles} className='bg-white'>{subTitle}</div>
+                subTitle && <div style={headingStyles} className='bg-secondary-white'>{subTitle}</div>
             }
             <div
                 style={{ ...headingStyles, ...isGradient }}
                 className={`
                 font-semibold 
                 uppercase 
-                ${fontSize ? fontSize : 'text-3xl md:text-6xl '}
+                ${fontSize ? fontSize : 'text-3xl md:text-5xl '}
                 leading-tight
                 bg-white
                 font-secondary

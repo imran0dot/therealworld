@@ -22,35 +22,13 @@ const StepByStep: React.FC = () => {
     const parentRef = useRef(null);
     gsap.registerPlugin(ScrollTrigger);
 
-    // useEffect(() => {
-    //     const arrow = arrowRef.current;
-    //     const parent = parentRef.current as HTMLDivElement | null;
-
-    //     if (arrow && parent) {
-    //         gsap.to(arrow, {
-    //             y: parent.clientHeight * 1.2,
-    //             // translateY: parent.clientHeight,
-    //             ease: "power1.inOut",
-    //             duration: 5,
-    //             scrollTrigger: {
-    //                 trigger: arrow,
-    //                 start: "top bottom",
-    //                 end: "bottom top",
-    //                 scrub: 0.05,
-    //                 markers: true
-    //             }
-    //         });
-    //     }
-    // }, []);
-
-
     useGSAP(() => {
         const arrow = arrowRef.current;
         const parent = parentRef.current as HTMLDivElement | null;
 
         if (arrow && parent) {
             gsap.to(arrow, {
-                y: parent.clientHeight * 1.2,
+                y: parent.clientHeight,
                 // translateY: parent.clientHeight,
                 ease: "power1.inOut",
                 duration: 5,
@@ -59,7 +37,7 @@ const StepByStep: React.FC = () => {
                     start: "top bottom",
                     end: "bottom top",
                     scrub: 0.05,
-                    markers: true
+                    markers: false
                 }
             });
         }
@@ -75,20 +53,20 @@ const StepByStep: React.FC = () => {
                 </div>
 
                 <div
-                    className='bg-center flex flex-col gap-20 md:items-center relative w-full mt-20 min-h-screen overflow-hidden'
+                    className='bg-center flex flex-col gap-20 md:items-center relative w-full mt-20 min-h-screen '
                     style={{ backgroundImage: `url('https://www.jointherealworld.com/revamp/images/cubes-bg.svg')` }}>
 
 
                     <div
+                    className='overflow-hidden flex flex-col gap-20 md:items-center relative'
                         ref={parentRef}>
                         {/* box one  */}
                         <div>
                             <Container>
                                 <div className='grid grid-cols-1 md:grid-cols-2 px-10'>
                                     <div className='relative flex justify-center items-center'>
-                                        <img className='z-20' width={'80%'} src={ImageOne} alt="" />
-                                        <div className='w-20 h-20 left-20 top-20 opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
-                                        <div className='w-20 h-20 trans opacity-30 bg-yellow absolute z-10 blur-3xl'></div>
+                                        <img className='z-20' src={ImageOne} alt="" />
+                                        <div className='w-72 h-20 opacity-30 bg-yellow absolute rotate-45 blur-3xl'></div>
                                     </div>
                                     <div className='md:px-10'>
                                         <FeatureList
@@ -156,23 +134,26 @@ const StepByStep: React.FC = () => {
                                 </div>
                             </Container>
                         </div>
-                    </div>
 
-
-                    <div className='absolute h-full w-[3px] bg-gradient-to-b from-transparent to-white ml-2 md:ml-0'></div>
+                        <div className='absolute h-full w-[3px] bg-gradient-to-b from-transparent to-white ml-[9px] md:ml-0'></div>
 
                     <div
                         ref={arrowRef}
-                        className='absolute flex flex-col justify-start items-center top-0 bottom-0'>
+                        className='absolute flex flex-col justify-start items-center top-0 bottom-0 h-full'>
                         <img className='top-0 object-scale-down z-20 ' src={arrowSVG} alt="" />
                         <div className='absolute h-full w-[3px] bg-secondary-dark '></div>
                     </div>
+                    </div>
 
 
-                    {/* button  */}
-                    <GiantButton smallText>Join The Real World</GiantButton>
+                    
                 </div>
+            </div>
 
+
+            <div className='mt-20'>
+                {/* button  */}
+                <GiantButton smallText>Join The Real World</GiantButton>
             </div>
         </div>
     );
