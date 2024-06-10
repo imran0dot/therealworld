@@ -48,7 +48,7 @@ const ExclusiveFeatures: React.FC = () => {
                 </div>
 
                 <div className='mx-10 mt-20 flex flex-col gap-4'>
-                    {ExclusiveFeaturesList.map(item => <ExclusiveFeaturesCard item={item} />)}
+                    {ExclusiveFeaturesList.map((item, index) => <ExclusiveFeaturesCard key={index} item={item} />)}
                 </div>
             </Container>
 

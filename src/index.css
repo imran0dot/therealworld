@@ -92,3 +92,7 @@ body {
   background-clip: text;
   font-family: "Clashdisplay Variable", sans-serif;
 }
+
+.vp-sidedock{
+  display: none !important;
+}

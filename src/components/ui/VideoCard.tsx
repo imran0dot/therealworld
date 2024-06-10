@@ -13,10 +13,9 @@ interface VideoCardType {
 }
 
 const VideoCard: React.FC<VideoCardType> = ({ cardDetails }) => {
-    const { icon, name, information, video, poster } = cardDetails;
+    const { icon, name, information, poster } = cardDetails;
     const [isOverlay, setIsOverlay] = useState(true);
 
-    console.log(video);
     return (
 
         <div className='pb-0 group relative rounded-sm overflow-hidden mb-10'>

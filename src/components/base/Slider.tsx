@@ -49,8 +49,8 @@ const Slider: React.FC = () => {
                     navigation
                     loop
                     centeredSlides
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                 >
                     {
                         sliderInfo.map((cardInfo, index) => {
