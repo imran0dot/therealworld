@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Container from '../shared/Container';
 import MainTitle from '../shared/MainTitle';
 import ImageOne from '../../assets/img/step-path-01.webp'
@@ -12,7 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GiantButton from '../ui/GiantButton';
 import { FaGraduationCap, FaUsers } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa6";
-import { useGSAP } from '@gsap/react';
+// import { useGSAP } from '@gsap/react';
 
 
 
@@ -22,13 +22,13 @@ const StepByStep: React.FC = () => {
     const parentRef = useRef(null);
     gsap.registerPlugin(ScrollTrigger);
 
-    useGSAP(() => {
+    useEffect(() => {
         const arrow = arrowRef.current;
         const parent = parentRef.current as HTMLDivElement | null;
 
         if (arrow && parent) {
             gsap.to(arrow, {
-                y: parent.clientHeight,
+                y: parent.clientHeight * 1.02,
                 // translateY: parent.clientHeight,
                 ease: "power1.inOut",
                 duration: 5,
@@ -41,7 +41,7 @@ const StepByStep: React.FC = () => {
                 }
             });
         }
-    });
+    }, []);
 
     return (
         <div>

@@ -4,6 +4,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css';
 import SliderCard from '../ui/SliderCard';
+import sliderPlaceholder from '../../assets/img/nox_1nox.webp'
 
 
 const Slider: React.FC = () => {
@@ -16,6 +17,7 @@ const Slider: React.FC = () => {
             number: 35,
             flug: "",
             income: "200",
+            poster: sliderPlaceholder
         },
         {
             videoUrl: "https://player.vimeo.com/video/742590921?h=592e908dec&autoplay=1&title=0&byline=0&portrait=0&",
@@ -23,6 +25,7 @@ const Slider: React.FC = () => {
             number: 35,
             flug: "",
             income: "200",
+            poster: sliderPlaceholder
         },
         {
             videoUrl: "https://player.vimeo.com/video/742590921?h=592e908dec&autoplay=1&title=0&byline=0&portrait=0&",
@@ -30,13 +33,14 @@ const Slider: React.FC = () => {
             number: 35,
             flug: "",
             income: "200",
+            poster: sliderPlaceholder
         }
     ]
 
 
 
     return (
-        <div className='relative'>
+        <div className='relative left-right-shadow'>
 
             <div
                 className='my-20 md:mx-52 '>
@@ -44,10 +48,11 @@ const Slider: React.FC = () => {
                 <Swiper
                     ref={swiperRef}
                     modules={[Navigation]}
-                    spaceBetween={20}
-                    slidesPerView={1.5}
+                    spaceBetween={10}
+                    slidesPerView={1.6}
                     navigation
-                    loop
+                    initialSlide={1}
+                    // loop
                     centeredSlides
                     // onSlideChange={() => console.log('slide change')}
                     // onSwiper={(swiper) => console.log(swiper)}
