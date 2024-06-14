@@ -6,7 +6,7 @@ import VimeoPlayer from '@vimeo/player';
 
 const HeroVideo: React.FC = () => {
     const [isOverlay, setIsOverlay] = useState(true);
-    const [isVideoFinished, setIsVideoFinished] = useState(false);
+    // const [isVideoFinished, setIsVideoFinished] = useState(false);
 
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const HeroVideo: React.FC = () => {
         if (iframe && player) {
           iframe.addEventListener('load', () => {
             player.on('ended', () => {
-              setIsVideoFinished(true);
+            //   setIsVideoFinished(true);
               console.log('ended')
             });
           });
